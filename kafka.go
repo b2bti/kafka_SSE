@@ -15,7 +15,7 @@ var producer sarama.SyncProducer
 
 func main() {
 	brokerList := []string{"localhost:9091", "localhost:9092", "localhost:9093"}
-	topic := "crypto-price"
+	topic := "odds"
 	config := sarama.NewConfig()
 	config.Producer.Return.Successes = true
 	var err error
